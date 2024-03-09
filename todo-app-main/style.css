@@ -1,0 +1,187 @@
+@import url(https://fonts.google.com/specimen/Josefin+Sans);
+
+:root {
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+  --linear-gradient: hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: var(--Light-Grayish-Blue);
+}
+
+.bg-img {
+  width: 100%;
+}
+.title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+}
+
+.sun {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+h1 {
+  letter-spacing: 15px;
+  font-weight: 700;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: auto;
+  position: relative;
+  bottom: 32%;
+}
+.todo-summary-list {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input {
+  width: 100%;
+  background-color: var(--Very-Dark-Desaturated-Blue);
+  border: 0;
+  margin: 20px;
+  height: 50px;
+  border-radius: 4px;
+  outline: 0;
+  color: var(--Very-Light-Grayish-Blue);
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.todo-list {
+  background-color: var(--Very-Dark-Desaturated-Blue);
+  width: 100%;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+.todo-li {
+  width: 100%;
+  display: flex;
+  color: var(--Very-Light-Grayish-Blue);
+  font-weight: 400;
+  font-size: 16px;
+  padding: 18px;
+  border-bottom: 1px solid var(--Very-Dark-Grayish-Blue);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle {
+  border: 1px solid var(--Dark-Grayish-Blue);
+  min-width: 22px;
+  min-height: 22px;
+  border-radius: 100%;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px 0 0;
+}
+.circle:hover {
+  background: linear-gradient(hsl(192, 31%, 59%), hsl(280, 87%, 65%));
+  cursor: pointer;
+  transition: 0.9s background;
+}
+.check {
+  width: 10px;
+  height: 10px;
+}
+.darkMode {
+  background-color: var(--Dark-Grayish-Blue);
+}
+
+.cancel {
+  cursor: pointer;
+}
+.li {
+  flex: 1;
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  background-color: var(--Very-Dark-Desaturated-Blue);
+  border-radius: 5px;
+}
+.tasks {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.done {
+  color: var(--Very-Dark-Grayish-Blue);
+  text-decoration: line-through;
+}
+.summary-btn {
+  color: var(--Very-Dark-Grayish-Blue);
+  padding: 0 12px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.summary-btn:hover,
+p:hover {
+  cursor: pointer;
+  color: var(--Light-Grayish-Blue-hover);
+}
+.lightMode {
+  background-color: var(--Very-Light-Gray);
+  color: var(--Very-Dark-Grayish-Blue);
+  border: 1px solid var(--Very-Light-Grayish-Blue);
+}

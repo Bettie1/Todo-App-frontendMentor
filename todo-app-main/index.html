@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+
+  <body>
+    <img
+      class="bg-img"
+      id="bgImg"
+      src="images\bg-desktop-dark.jpg"
+      alt="bg-desktop-dark"
+    />
+
+    <div class="page" id="page">
+      <div class="title">
+        <h1>TODO</h1>
+        <img class="sun" id="sun" src="images\icon-sun.svg" alt="sun" />
+      </div>
+      <input class="input" id="input" type="text" />
+      <div class="todo-summary-list">
+        <ul class="todo-list" id="todo-list"></ul>
+
+        <div class="summary" id="summary">
+          <p id="items-left">0 items left</p>
+          <ul class="tasks">
+            <button class="summary-btn" id="All">All</button>
+            <button class="summary-btn" id="Active">Active</button>
+            <button class="summary-btn" id="Completed">Completed</button>
+          </ul>
+          <p id="clearCompleted">Clear Completed</p>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Izabela</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
